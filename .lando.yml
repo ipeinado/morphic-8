@@ -1,0 +1,6 @@
+name: morphic-8
+recipe: pantheon
+config:
+  framework: drupal8
+  site: morphic-8
+  id: e1be4569-558f-4870-87f6-c193dba1ea23
