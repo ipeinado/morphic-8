@@ -1,0 +1,26 @@
+{
+  "name": "morphic",
+  "version": "0.0.1",
+  "description": "A subtheme for Morphic based on the Bootstrap theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipeinado/morphic-8.git"
+  },
+  "author": "Ignacio Peinado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipeinado/morphic-8/issues"
+  },
+  "homepage": "https://github.com/ipeinado/morphic-8#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

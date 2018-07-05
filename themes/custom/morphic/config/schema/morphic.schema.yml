@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+morphic.settings:
+  type: theme_settings
+  label: 'Morphic settings'
