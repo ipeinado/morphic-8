@@ -1,0 +1,120 @@
+.block-heromessage {
+	background-color: #FFF;
+	padding-top: 2em;
+	padding-bottom: 4em;
+	margin-bottom: 2em;
+	border: 1px solid #000;
+	/*will-change: background-color;*/
+	animation: backgroundColor step-end 15s;
+}
+
+.block-heromessage h2 {
+	color: #000;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 600;
+	
+}
+
+.block-heromessage img {
+	position: absolute;
+	top: 2em;
+	width: 64px;
+	height: 64px;
+	animation: rotateLogo ease-out 5s infinite;
+}
+
+@media screen and (max-width: 991px) {
+
+	.block-heromessage {
+		padding-left: 1em;
+	}
+
+	.block-heromessage h2 {
+		width: 80%;
+		font-size: 3.6em;
+		animation: titleTransformSM step-end 15s;
+	}
+
+	.block-heromessage img {
+		right: 2em;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.block-heromessage {
+		padding-left: 8em;
+		padding-right: 6em;
+	}
+
+	.block-heromessage h2 {
+		width: 50%;
+		animation: titleTransformLG step-end 15s;
+	}
+
+	.block-heromessage img {
+		right: 8em;
+	}
+}
+
+@keyframes rotateLogo {
+	75% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes backgroundColor {
+	33% {
+		background-color: #ff0;
+	}
+
+	66% {
+		background-color: #000;
+	}
+
+	100% {
+		background-color: #fff;
+	}
+}
+
+@keyframes titleTransformLG {
+	33% {
+		font-size: 6em;
+		font-weight: 400;
+		letter-spacing: 10px;
+		width: 75%;
+	}
+
+	66% {
+		width: 50%;
+		font-size: 4em;
+		letter-spacing: 0;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	100% {
+		font-size: 4em;
+		color: #000;
+	}
+}
+
+@keyframes titleTransformSM {
+	33% {
+		font-weight: 400;
+	}
+
+	66% {
+		font-size: 4em;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	100% {
+		font-size: 4em;
+		color: #000;
+	}
+}

@@ -18,7 +18,7 @@ gulp.task('sass', function() {
 		.pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8']))
-		.pipe(sourcemaps.write('./css'))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('./css'))
 		.pipe(browserSync.reload({stream: true}));
 });
