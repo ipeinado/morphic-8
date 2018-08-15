@@ -4,25 +4,20 @@ config:
   framework: drupal8
   site: morphic-8
   id: e1be4569-558f-4870-87f6-c193dba1ea23
-
 services:
   node:
-    # Node version 6.10
-    type: node:6.10
-
+    type: 'node:6.10'
     run:
-      - "cd $LANDO_MOUNT/themes/custom/morphic && npm install"
-      - "cd $LANDO_MOUNT/themes/custom/morphic && gulp"
-
+      - cd $LANDO_MOUNT/themes/custom/morphic && npm install
+      - cd $LANDO_MOUNT/themes/custom/morphic && gulp
     overrides:
       services:
-        ports: [3003:3003]
-
+        ports:
+          - '3003:3003'
     globals:
-      gulp: "latest"
-      bower: "latest"
-      npm: "latest"
-
+      gulp: latest
+      bower: latest
+      npm: latest
 tooling:
   gulp:
     service: node
@@ -30,5 +25,5 @@ tooling:
     service: node
   npm:
     service: node
-  node: 
+  node:
     service: node
