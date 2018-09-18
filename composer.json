@@ -15,7 +15,7 @@
         "drupal/ckeditor_markdown": "^1.0"
     },
     "replace": {
-        "drupal/core": "^8.5"
+        "drupal/core": "^8.6"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
