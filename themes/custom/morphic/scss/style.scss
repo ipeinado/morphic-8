@@ -7,6 +7,9 @@
 // Base-theme overrides.
 @import 'overrides';
 
+// Partials.
+@import 'partials/homepage';
+
 body {
 	background-color: #fff;
 }
