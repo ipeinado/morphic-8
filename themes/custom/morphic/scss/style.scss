@@ -10,6 +10,14 @@
 // Partials.
 @import 'partials/homepage';
 
+html {
+	font-size: 14px;
+}
+
 body {
 	background-color: #fff;
+}
+
+.flc-prefsEditor-separatedPanel {
+	z-index: 9999;
 }
