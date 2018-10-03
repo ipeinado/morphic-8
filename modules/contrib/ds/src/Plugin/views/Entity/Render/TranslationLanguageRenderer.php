@@ -58,7 +58,7 @@ class TranslationLanguageRenderer extends DefaultLanguageRenderer {
   /**
    * {@inheritdoc}
    */
-  public function getLangcode(ResultRow $row) {
+  public function getLangcode(ResultRow $row, $relationship = NULL) {
     return isset($row->{$this->langcodeAlias}) ? $row->{$this->langcodeAlias} : $this->languageManager->getDefaultLanguage()->getId();
   }
 
