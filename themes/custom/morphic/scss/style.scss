@@ -21,3 +21,39 @@ body {
 .flc-prefsEditor-separatedPanel {
 	z-index: 9999;
 }
+
+.region-footer {
+
+	@media (min-width: 768px) {
+		text-align: center;
+	}
+	
+	span {
+		color: #777;
+		display: block;
+	}
+}
+
+.navbar.navbar-default {
+	margin-top: 1.3rem;
+}
+
+.menu--footer {
+	margin-bottom: 3rem;
+
+	@media (min-width: 768px) {	
+		li {
+			display: inline-block;
+			margin: 0;
+		}
+
+		li > a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+}
