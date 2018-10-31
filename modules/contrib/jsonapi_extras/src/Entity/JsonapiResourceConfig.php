@@ -20,7 +20,7 @@ use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
  *       "delete" = "Drupal\jsonapi_extras\Form\JsonapiResourceConfigDeleteForm"
  *     },
  *     "route_provider" = {
- *       "html" = "Drupal\jsonapi_extras\JsonapiResourceConfigHtmlRouteProvider",
+ *       "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider"
  *     },
  *   },
  *   config_prefix = "jsonapi_resource_config",
@@ -118,7 +118,36 @@ class JsonapiResourceConfig extends ConfigEntityBase {
       \Drupal::service('jsonapi.resource_type.repository')->reset();
       \Drupal::service('router.builder')->setRebuildNeeded();
     }
-    catch (ServiceNotFoundException $exception) {}
+    catch (ServiceNotFoundException $exception) {
+      // This is intentionally empty.
+    }
+  }
+
+  /**
+   * Returns a field mapping as expected by JSON API 2.x' ResourceType class.
+   *
+   * @see \Drupal\jsonapi\ResourceType\ResourceType::__construct()
+   */
+  public function getFieldMapping() {
+    $resource_fields = $this->get('resourceFields');
+
+    $mapping = [];
+    foreach ($resource_fields as $resource_field) {
+      $field_name = $resource_field['fieldName'];
+      if ($resource_field['disabled'] === TRUE) {
+        $mapping[$field_name] = FALSE;
+        continue;
+      }
+
+      if (($alias = $resource_field['publicName']) && $alias !== $field_name) {
+        $mapping[$field_name] = $alias;
+        continue;
+      }
+
+      $mapping[$field_name] = TRUE;
+    }
+
+    return $mapping;
   }
 
 }

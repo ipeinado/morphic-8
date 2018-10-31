@@ -3,6 +3,7 @@
 namespace Drupal\jsonapi_extras\ResourceType;
 
 use Drupal\Component\Plugin\Exception\PluginException;
+use Drupal\Core\DependencyInjection\DependencySerializationTrait;
 use Drupal\jsonapi\ResourceType\ResourceType;
 use Drupal\jsonapi_extras\Entity\JsonapiResourceConfig;
 use Drupal\jsonapi_extras\Plugin\ResourceFieldEnhancerManager;
@@ -12,6 +13,8 @@ use Drupal\Core\Config\ConfigFactoryInterface;
  * Defines a configurable resource type.
  */
 class ConfigurableResourceType extends ResourceType {
+
+  use DependencySerializationTrait;
 
   /**
    * The JsonapiResourceConfig entity.
@@ -36,6 +39,8 @@ class ConfigurableResourceType extends ResourceType {
 
   /**
    * {@inheritdoc}
+   *
+   * @todo Remove this when JSON API Extras drops support for JSON API 1.x.
    */
   public function getPublicName($field_name) {
     return $this->translateFieldName($field_name, 'fieldName', 'publicName');
@@ -43,6 +48,8 @@ class ConfigurableResourceType extends ResourceType {
 
   /**
    * {@inheritdoc}
+   *
+   * @todo Remove this when JSON API Extras drops support for JSON API 1.x.
    */
   public function getInternalName($field_name) {
     return $this->translateFieldName($field_name, 'publicName', 'fieldName');
@@ -74,6 +81,8 @@ class ConfigurableResourceType extends ResourceType {
 
   /**
    * {@inheritdoc}
+   *
+   * @todo Remove this when JSON API Extras drops support for JSON API 1.x.
    */
   public function isFieldEnabled($field_name) {
     $resource_field = $this->getResourceFieldConfiguration($field_name);
@@ -155,6 +164,8 @@ class ConfigurableResourceType extends ResourceType {
    *
    * @param bool $is_internal
    *   Indicates if the resource is not public.
+   *
+   * @todo Remove this when JSON API Extras drops support for JSON API 1.x.
    */
   public function setInternal($is_internal) {
     $this->internal = $is_internal;
@@ -211,6 +222,8 @@ class ConfigurableResourceType extends ResourceType {
    *
    * @return string
    *   The field name in the desired realm.
+   *
+   * @todo Remove this when JSON API Extras drops support for JSON API 1.x.
    */
   private function translateFieldName($field_name, $from, $to) {
     $resource_field = $this->getResourceFieldConfiguration($field_name, $from);
