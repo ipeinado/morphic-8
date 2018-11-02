@@ -16,8 +16,10 @@ framework:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
-hero-message:
-    version: 0.1
-    css:
-        theme:
-            css/hero.css: {}
+global-scripts:
+    version: 1.x
+    js:
+        js/morphic.js: {}
+    dependencies:
+        - core/jquery
+        - core/jquery.once

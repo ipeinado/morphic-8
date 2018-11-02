@@ -1,0 +1,96 @@
+.navbar > .container {
+  @media (min-width: 768px) {
+    padding-left: (48px/16px)*1rem;
+    padding-right: (48px/16px)*1rem;
+  }
+}
+
+.navbar .logo {
+	width: 72px;
+  transition: width .25s ease-in-out;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.navbar-toggle {
+  margin-top: (26px/16px)*1rem;
+  transition: margin-top .25s ease-in-out;
+}
+
+.navbar-default .navbar-brand {
+	font-size: (28px/16px)*1rem;
+  line-height: (32px/16px)*1rem;
+	color: #002957;
+	font-weight: bolder;
+
+	&:hover {
+		color: #008145;
+	}
+
+  @media (min-width: 768px) {
+    font-size: (36px/16px)*1rem;
+    line-height: (42px/16px)*1rem;
+    transition: all .25s ease-in-out;
+  }
+}
+
+.navbar-default .navbar-nav {
+  transition: all .25s ease-in-out;
+
+  li {
+    a {
+      font-size: (16px/16px)*1rem;
+      color: #002957;
+      font-weight: 500;
+
+      &:hover {
+        color: #008145;  
+      }
+    }
+
+    &.active > a,
+    &.active > a:hover {
+      color: #008145;
+      background-color: #fff;
+    }
+  }
+
+  @media (min-width: 768px) {
+    float: right;
+    margin-top: (13px/16px)*1rem;
+  }
+}
+
+.navbar-default.minified {
+
+  .navbar-toggle {
+    margin-top: (20px/16px)*1rem;
+  }
+
+  .navbar-nav {
+    margin-top: 2px;
+  }
+  
+  .logo {
+    width: 60px;
+
+    @media (min-width: 768px) {
+      width: 48px;
+    }
+  }
+
+  .navbar-brand {
+    font-size: (24px/16px)*1rem;
+    line-height: (22px/16px)*1rem;
+  }
+}
+
+.region-footer {
+  background-color: #002957;
+
+  a {
+    color: #fff;
+  }
+}
