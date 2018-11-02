@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0b5ff23aa8b7702226c3878b0a83675e",
-    "content-hash": "0d331bcbba1188a254ecead06fb2ae85",
+    "hash": "c6faad38b120cc3ff6e6d70152d222d1",
+    "content-hash": "952a6ba03d98face3448398eb8376b80",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -818,65 +818,6 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
-        },
-        {
-            "name": "drupal/fluidui",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/fluidui",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fluidui-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "2813eddd39cdbfd9472453cadf5b62925107e1fe"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1529435925",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Nugg",
-                    "homepage": "https://www.drupal.org/user/2801535"
-                },
-                {
-                    "name": "ashopin",
-                    "homepage": "https://www.drupal.org/user/3101417"
-                },
-                {
-                    "name": "danrod",
-                    "homepage": "https://www.drupal.org/user/19150"
-                },
-                {
-                    "name": "jess.hunte",
-                    "homepage": "https://www.drupal.org/user/3119465"
-                }
-            ],
-            "description": "Adds the FluidUI/Infusion libraries in Drupal 8.",
-            "homepage": "https://www.drupal.org/project/fluidui",
-            "support": {
-                "source": "http://cgit.drupalcode.org/fluidui"
             }
         },
         {

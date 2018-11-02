@@ -12,8 +12,7 @@
         "drupal/field_group": "^1.0",
         "drupal/simplify": "^1.0",
         "drupal/bootstrap": "^3.12",
-        "drupal/ckeditor_markdown": "^1.0",
-        "drupal/fluidui": "^1.0"
+        "drupal/ckeditor_markdown": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.6"

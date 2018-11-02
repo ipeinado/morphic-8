@@ -1,7 +1,0 @@
-/* Theme Overrides*/
-.flc-prefsEditor-separatedPanel {
-  z-index: 10;
-  position: absolute;
-  right: 0;
-  width: 100%;
-}
