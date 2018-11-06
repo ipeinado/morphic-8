@@ -1,0 +1,30 @@
+image: node:latest
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy:
+  stage: deploy
+  script:
+    - npm install -g pm2
+    - npm run deploy
+  environment:
+    name: stg07
+    url: http://morphic-stg.pushing7.com
+  only:
+    - staging
+
+deploy_production:
+  stage: deploy
+  script:
+    - npm install -g pm2
+    - pm2 deploy production
+  environment:
+    name: web07
+    url: https://morphic.world
+  only:
+    - production
