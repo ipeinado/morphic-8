@@ -10,6 +10,7 @@
 // Partials.
 @import 'partials/homepage';
 @import 'partials/header';
+@import 'partials/page';
 
 html {
 	font-size: 16px;
@@ -17,8 +18,70 @@ html {
 
 body {
 	background-color: #fff;
+	font-size: 16px;
+	line-height: 24px;
 }
 
-.flc-prefsEditor-separatedPanel {
-	z-index: 9999;
+footer.container {
+	padding: 0;
+}
+
+.region.region-footer {
+	background-color: #002957;
+	color: #fff;
+	padding: 1rem;
+
+	@media (min-width: 992px) {
+		display: flex;
+		align-items: center;
+		padding: 4rem;
+	}
+
+	#block-footerimage {
+		margin-bottom: 1rem;
+		padding: 0 15px;
+		@media (min-width: 992px) {
+			margin-bottom: 0;
+			padding: 0;
+		}
+	}
+
+	nav {
+		@media (min-width: 992px) {
+			flex-grow: 2;	
+		}
+		
+	}
+
+	ul.menu--footer {
+		margin: 0;
+		padding: 0;
+
+		@media (max-width: 991px) {
+			margin-bottom: 1rem;
+		}
+		
+		@media (min-width: 992px) {
+			float: right;
+			display: flex;
+			flex-direction: row;
+			margin-right: 2rem;	
+		}
+		
+
+		li > a:hover {
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	}
+
+	a {
+		color: #fff;
+	}
+
+	#block-footercopyright {
+		@media (max-width: 991px) {
+			padding: 10px 15px;
+		}
+	}
 }
