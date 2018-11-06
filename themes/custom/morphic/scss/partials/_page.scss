@@ -16,10 +16,9 @@
 	.group-right {
 		.field--name-body {
 			padding: 2rem 0;
-			margin-bottom: 1rem;
 			border-bottom: 1px solid #ccc;
 		}
-		
+
 		@media (min-width: 992px) {
 			width: 66%;
 			float: left;
@@ -46,4 +45,31 @@
 		color: #008145;
 		font-weight: bold;
 	}
+}
+
+.paragraph.paragraph--type-collapsible-page-sub-section {
+	border-bottom: 1px solid #ccc;
+}
+
+h2.collapsible-title {
+	margin: 0;
+}
+
+h2.collapsible-title[aria-expanded="false"] {
+	padding: 3rem 0;
+	&:before {
+		content: "\25B8";
+	}
+}
+
+h2.collapsible-title[aria-expanded="true"] {
+	padding: 3rem 0 0 0;
+	&:before {
+		content: "\25BE";
+	}
+}
+
+.collapsible-body {
+	display: none;
+	padding: 1rem 1rem 3rem 1rem;
 }

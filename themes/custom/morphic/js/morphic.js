@@ -15,6 +15,22 @@
           }
         });
       });
+
+      $('.collapsible-title', context).once('.collapsible-title').each(function() {
+        $(this).click(function() {
+          var id = $(this).attr('aria-controls');
+          var region = $('#' + id);
+          if ($(this).attr('aria-expanded') == 'false') {
+            $(this).attr('aria-expanded', 'true');
+            $(region).slideDown('fast');
+            $(region).focus();
+          } else {
+            // region is expanded
+            $(this).attr('aria-expanded', 'false');
+            $(region).slideUp('fast');
+          }
+        });
+      });
 		}
 	};
 
