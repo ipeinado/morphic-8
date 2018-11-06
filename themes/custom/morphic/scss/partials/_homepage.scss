@@ -146,11 +146,15 @@
 	}
 }
 
-#block-heroitem1 {
+.block-content--type-hero-item {
 	padding: 12rem 0 0 0;
 
 	@media (min-width: 768px) {
 		padding: 6rem 0;
+	}
+
+	@media (min-width: 992px) {
+		padding: 9rem 0;
 	}
 
 	margin-bottom: 4rem;
@@ -167,11 +171,11 @@
 
 	@media (min-width: 768px) {
 		width: 55%;
-		padding: 2rem 3rem;
+		padding: 2rem 4rem;
 	}
 
 	@media (min-width: 992px) {
-		width: 45%;
+		width: 40%;
 	}
 
 
@@ -184,6 +188,6 @@
 		font-weight: 600;
 		margin-bottom: 1rem;
 		margin-top: 0;
-		line-height: 1.2em;
+		line-height: 1.4em;
 	}
 }
