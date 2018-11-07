@@ -1,39 +1,71 @@
 .page-node-type-page,
 .page-node-type-article {
+
 	.page-header {
 		display: none;
 	}
 
-	.group-left {
-		margin-bottom: 2rem;
+	.page-image-header {
+		height: 180px;
+		clear: both;
 
 		@media (min-width: 992px) {
+			height: 240px;			
+		}
+	}
+
+	.page-content {
+		padding: 0 2rem;
+
+		@media (min-width: 768px) {
+			padding: 0 4rem;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 0 2rem;
+			width: 1170px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.page-content .page-title {
+		box-sizing: border-box;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
+		@media (min-width: 992px) {
+			padding-top: 4rem;
 			width: 33%;
 			float: left;
-			padding: 2rem 4rem;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 4rem;
 		}
 	}
 
-	.group-right {
-		.field--name-body {
-			padding: 2rem 0;
-		}
+	.page-content .page-body {
+		box-sizing: border-box;
 
 		@media (min-width: 992px) {
-			width: 66%;
+			width: 67%;
 			float: left;
+			overflow: hidden;
+			padding-top: 2rem;
 		}
 	}
 
-	.lead-in {
-		color: #002957;
+	.page-content .lead-in {
 		font-size: (21px/16px)*1rem;
 		line-height: (28px/16px)*1rem;
+		color: #002957;
+		margin-bottom: 1rem;
 	}
-}
 
-.field--name-field-heading-image {
-	margin-bottom: 2rem;
+	.page-content .field--name-body {
+		padding-bottom: 2rem;
+	}
 }
 
 .field--name-field-sub-sections {
@@ -87,14 +119,13 @@ h2.collapsible-title[aria-expanded="true"] {
  	@media (min-width: 992px) {
  		padding-left: 25%;
  	}
- 	
 
  	h2 {
  		margin-top: 0;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #008145;
-    font-weight: bold;
+    	font-size: 1rem;
+    	text-transform: uppercase;
+    	color: #008145;
+    	font-weight: bold;
 
  		a {
  			color: #008145;
@@ -162,20 +193,20 @@ h2.collapsible-title[aria-expanded="true"] {
 }
 
  .node.node--type-article.node--view-mode-teaser {
-	padding: 2rem 0;
+	padding: 3rem 0;
 	border-top: 1px solid #ccc;
 
 	.teaser-image {
 		width: 240px;
 		float: left;
-		margin-right: 1rem;
+		margin-right: 3rem;
 	}
  }
 
  nav.breadcrumb {
   padding: 0.8em 0;
   background-color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 nav.breadcrumb ol {
@@ -204,4 +235,24 @@ nav.breadcrumb li + li::before {
 nav.breadcrumb [aria-current="page"] {
   color: #000;
   text-decoration: none;
+}
+
+.path-user {
+	.main-container.container-fluid {
+		padding-top: 2rem;
+
+		@media (min-width: 768px) {
+			margin-left: auto;
+			margin-right: auto;
+			width: 750px;
+		}
+
+		@media (min-width: 992px) {
+			width: 970px;
+		}
+
+		@media (min-width: 1200px) {
+			width: 1170px;
+		}
+	}
 }
