@@ -42,8 +42,14 @@ footer.container {
 		padding: 0 15px;
 		@media (min-width: 992px) {
 			margin-bottom: 0;
+			margin-right: 1rem;
 			padding: 0;
 		}
+	}
+
+	#block-contactinfo {
+		font-weight: bold;
+		padding: 1rem;
 	}
 
 	nav {
