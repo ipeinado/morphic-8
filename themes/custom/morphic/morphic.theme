@@ -6,3 +6,12 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function morphic_page_attachments_alter(&$attachments) {
+	if (\Drupal::service('path.matcher')->isFrontPage()) {
+		$attachments['#attached']['library'][] = 'morphic/homepage';
+	}
+}

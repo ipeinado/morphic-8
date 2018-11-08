@@ -17,9 +17,17 @@ framework:
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
 global-scripts:
-    version: 1.x
-    js:
-        js/morphic.js: {}
-    dependencies:
-        - core/jquery
-        - core/jquery.once
+  version: 1.x
+  js:
+    js/morphic.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+homepage:
+  version: 1.x
+  js:
+    js/homepage.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

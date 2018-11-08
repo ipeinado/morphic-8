@@ -15,6 +15,36 @@
           }
         });
       });
+
+      $('.collapsible-title', context).once('.collapsible-title').each(function() {
+        $(this).click(function() {
+          var id = $(this).attr('aria-controls');
+          var region = $('#' + id);
+          if ($(this).attr('aria-expanded') == 'false') {
+            $(this).attr('aria-expanded', 'true');
+            $(region).slideDown('fast');
+            $(region).focus();
+          } else {
+            // region is expanded
+            $(this).attr('aria-expanded', 'false');
+            $(region).slideUp('fast');
+          }
+        });
+      });
+
+      $('.search-block-form', context).once('.search-block-form').each(function() {
+        var input = $(this).find('.form-search'),
+          that = this,
+          block_width = $(this).css('width');
+
+        $(input).focus(function() {
+          $(that).css('width', '60%');
+        });
+
+        $(input).blur(function() {
+          $(that).css('width', block_width);
+        });
+      });
 		}
 	};
 
