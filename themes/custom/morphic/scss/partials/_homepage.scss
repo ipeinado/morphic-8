@@ -14,7 +14,7 @@
 }
 
 .homepage-links {
-	ul {
+	ul.homepage-links-list {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -33,8 +33,8 @@
 		}
 	}
 
-	ul > li {
-		border: 1px solid #eee;
+	ul.homepage-links-list > li {
+		border: 1px solid #ccc;
 		border-top: 5px solid #008145;
 		box-sizing: border-box;
 		margin-bottom: 2rem;
@@ -54,7 +54,7 @@
 		}
 	}
 
-	ul > li:first-child {
+	ul.homepage-links-list > li:first-child {
 		margin-left: 0;
 	}
 
@@ -86,7 +86,7 @@
 		margin: 0 auto;
 	}
 
-	.homepage-link a {
+	.homepage-page-link a {
 		border-top: 1px solid #eee;
 		font-weight: 500;
 		font-size: (14px/16px)*1rem;

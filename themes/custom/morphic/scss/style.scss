@@ -114,7 +114,8 @@ footer.container {
 		}
 		
 
-		li > a:hover {
+		li > a:hover,
+		li > a:focus {
 			background-color: transparent;
 			text-decoration: underline;
 		}
