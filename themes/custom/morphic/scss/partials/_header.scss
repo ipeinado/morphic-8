@@ -74,13 +74,21 @@
       position: absolute;
       right: 0;
       top: 32px;
+      width: 110px;
+    }
+
+    @media (min-width: 992px) {
       width: 140px;
     }
   }
 
   #block-morphic-main-menu {
     @media (min-width: 768px) {
-      margin-right: 144px;
+      margin-right: 100px;
+    }
+
+    @media (min-width: 992px) {
+      margin-right: 140px;
     }
   }
 }

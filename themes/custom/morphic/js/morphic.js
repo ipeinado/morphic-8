@@ -34,13 +34,15 @@
 
       $('.search-block-form', context).once('.search-block-form').each(function() {
         var input = $(this).find('.form-search'),
-          that = this;
+          that = this,
+          block_width = $(this).css('width');
+
         $(input).focus(function() {
           $(that).css('width', '60%');
         });
 
         $(input).blur(function() {
-          $(that).css('width', '140px');
+          $(that).css('width', block_width);
         });
       });
 		}
