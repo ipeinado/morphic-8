@@ -19,11 +19,15 @@
   transition: margin-top .25s ease-in-out;
 }
 
+.navbar-default {
+  border: none;
+}
+
 .navbar-default .navbar-brand {
 	font-size: (28px/16px)*1rem;
   line-height: (32px/16px)*1rem;
 	color: #002957;
-	font-weight: bolder;
+	font-weight: bold;
 
 	&:hover {
 		color: #008145;
@@ -44,7 +48,9 @@
     a {
       font-size: (16px/16px)*1rem;
       color: #002957;
-      font-weight: 500;
+      padding-left: 12px;
+      padding-right: 12px;
+      font-weight: bold;
 
       &:hover {
         color: #008145;  
@@ -94,6 +100,8 @@
 }
 
 .navbar-default.minified {
+
+  border-bottom: 1px solid #ccc;
 
   .navbar-toggle {
     margin-top: (20px/16px)*1rem;

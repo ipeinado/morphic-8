@@ -31,3 +31,8 @@ homepage:
   dependencies:
     - core/jquery
     - core/jquery.once
+
+fonts:
+  css:
+    theme: 
+      'https://fonts.googleapis.com/css?family=Open+Sans:Regular,Bold,Italic': { type: external, minified: true }
