@@ -31,6 +31,18 @@
           }
         });
       });
+
+      $('.search-block-form', context).once('.search-block-form').each(function() {
+        var input = $(this).find('.form-search'),
+          that = this;
+        $(input).focus(function() {
+          $(that).css('width', '60%');
+        });
+
+        $(input).blur(function() {
+          $(that).css('width', '140px');
+        });
+      });
 		}
 	};
 
