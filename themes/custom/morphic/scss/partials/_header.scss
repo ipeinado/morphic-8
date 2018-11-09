@@ -6,8 +6,24 @@
 }
 
 .navbar .logo {
-	width: 72px;
+	width: 200px;
+  padding-top: 6px;
   transition: width .25s ease-in-out;
+
+  .letter {
+    transition: fill .25s ease-in-out;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 0;
+    width: 260px;
+  }
+
+  &:hover {
+    .letter {
+      fill: #008145 !important;
+    }
+  }
 
 	img {
 		max-width: 100%;
@@ -113,10 +129,11 @@
   }
   
   .logo {
-    width: 60px;
+    padding-top: 2px;
+    width: 160px;
 
     @media (min-width: 768px) {
-      width: 48px;
+      width: 160px;
     }
   }
 
