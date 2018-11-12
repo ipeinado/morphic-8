@@ -103,6 +103,17 @@ footer.container {
 		margin-bottom: 1rem;
 		padding: 0;
 
+		path {
+			transition: all .25s ease-in-out;
+		}
+
+		&:hover,
+		&:focus {
+			path {
+				fill: #82C561 !important;
+			}
+		}
+
 		@media (min-width: 992px) {
 			margin-bottom: 0;
 			margin-right: 1rem;
