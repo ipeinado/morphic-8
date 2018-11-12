@@ -67,13 +67,10 @@
 		padding-bottom: 2rem;
 
 		@media (min-width: 992px) {
-			padding-top: 6rem;
+			padding-top: (144px/16px)*1rem;
+			padding-right: (48px/16px)*1rem;
 			width: 33%;
 			float: left;
-		}
-
-		@media (min-width: 1200px) {
-			padding: 6rem 4rem;
 		}
 	}
 
@@ -84,7 +81,7 @@
 			width: 67%;
 			float: left;
 			overflow: hidden;
-			padding-top: 4rem;
+			padding-top: (96px/16px)*1rem;
 		}
 	}
 
@@ -96,24 +93,30 @@
 	}
 
 	.page-content .field--name-body {
-		padding-bottom: 2rem;
+		padding-bottom: (48px/16px)*1rem;
 	}
 }
 
 .field--name-field-sub-sections {
 
-	.subsection-title {
+	.subsection-title,
+	.subsection-title > a {
 		margin-top: 0;
 		font-size: 1rem;
 		text-transform: uppercase;
 		color: #008145;
 		font-weight: bold;
 	}
+
+	.subsection-title > a:hover,
+	.subsection-title > a:focus {
+		text-decoration: none;
+	}
 }
 
 .paragraph.paragraph--type-page-sub-section {
 	border-top: 1px solid #ccc;
-	padding: 3rem 0;
+	padding: (48px/16px)*1rem 0;
 }
 
 .paragraph.paragraph--type-collapsible-page-sub-section {
@@ -221,8 +224,11 @@ button.collapsible-title[aria-expanded="true"] {
 			font-weight: 500;
 			color: #008145;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				text-decoration: none;
+				background-color: #008145;
+				color: #fff;
 			}
 
 			&:after {
@@ -245,7 +251,7 @@ button.collapsible-title[aria-expanded="true"] {
  }
 
  nav.breadcrumb {
-  padding: 0.8em 0;
+  padding: 0 0 0.8em 0;
   background-color: #fff;
   margin-bottom: 0.5rem;
 }
@@ -276,4 +282,11 @@ nav.breadcrumb li + li::before {
 nav.breadcrumb [aria-current="page"] {
   color: #000;
   text-decoration: none;
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -180px;
+	visibility: hidden;
 }

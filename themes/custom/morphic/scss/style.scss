@@ -23,6 +23,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+body.navbar-is-fixed-top {
+	@media (min-width: 992px) {
+		margin-top: 126px;
+	}
+}
+
 .container-fluid {
 	margin: 0;
 	padding: 0;
@@ -37,16 +43,16 @@ header .container-fluid {
 	margin-left: auto;
 	margin-right: auto;
 
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 24px;
+	padding-right: 24px;
 
 	@media (min-width: 992px) {
 		width: 970px;
+		padding-left: 48px;
+		padding-right: 48px;
 	}
 
 	@media (min-width: 1200px) {
-		padding-left: 3rem;
-		padding-right: 3rem;
 		width: 1170px;
 	}	
 }
@@ -70,11 +76,11 @@ footer.container {
 	border-top: none;
 	background-color: #002957;
 	color: #fff;
-	margin-top: 4rem;
+	margin-top: (96px/16px)*1rem;
 }
 
 .region.region-footer {
-	padding: 1rem;
+	padding: 48px 48px 96px;
 
 	@media (min-width: 768px) {
 		width: 750px;
@@ -86,7 +92,6 @@ footer.container {
 		margin-right: auto;
 		display: flex;
 		align-items: center;
-		padding: 4rem 0;
 	}
 
 	@media (min-width: 1200px) {

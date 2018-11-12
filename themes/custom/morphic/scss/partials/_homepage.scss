@@ -105,6 +105,12 @@
 			content: ">";
 			padding-left: 0.3rem;
 		}   
+
+		&:focus {
+			color: #fff;
+			background-color: #008145;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -116,7 +122,7 @@
 	}
 
 	@media (min-width: 992px) {
-		padding: 9rem 0;
+		padding: 96px 0 192px;
 	}
 
 	@media (min-width: 1200px) {
@@ -125,7 +131,7 @@
 		width: 1170px;
 	}
 
-	margin-bottom: 4rem;
+	margin-bottom: (48px/16px)*1rem;
 	position: relative;
 }
 
@@ -133,7 +139,7 @@
 	background-color: rgba(0, 41, 87, .7);
 
 	width: 100%;
-	padding: 2rem;
+	padding: (48px/16px)*1rem;
 
 	@media (min-width: 768px) {
 		width: 55%;
@@ -142,7 +148,7 @@
 
 	@media (min-width: 992px) {
 		width: 45%;
-		padding-left: 4rem;
+		padding-left: (96px/16px)*1rem;
 		padding-right: 2rem;
 	}
 

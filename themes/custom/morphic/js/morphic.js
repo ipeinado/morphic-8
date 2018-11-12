@@ -34,16 +34,21 @@
 
       $('.search-block-form', context).once('.search-block-form').each(function() {
         var input = $(this).find('.form-search'),
-          that = this,
-          block_width = $(this).css('width');
+          that = this;
 
         $(input).focus(function() {
-          $(that).css('width', '60%');
+          $(that).addClass('expanded');
         });
 
         $(input).blur(function() {
-          $(that).css('width', block_width);
+          $(that).removeClass('expanded');
         });
+      });
+
+      $('a[href^="mailto:"]', context).once('a[href^="mailto:"]').each(function() {
+        this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
+        // Remove this line if you don't want to set the email address as link text:
+        this.innerHTML = this.href.replace('mailto:', '');
       });
 		}
 	};
