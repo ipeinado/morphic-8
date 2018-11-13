@@ -1,0 +1,29 @@
+{
+  "apps": [],
+  "deploy": {
+    "staging": {
+      "user": "morphicd8stg",
+      "host": "qual-msn-stg07.qualtim.local",
+      "ref": "origin/staging",
+      "repo": "git@git.pushing7.com:raisingthefloor/morphic-drupal.git",
+      "path": "/var/www/morphic-stg.pushing7.com/private",
+      "ssh_options": [
+        "StrictHostKeyChecking=no",
+        "PasswordAuthentication=no"
+      ],
+      "post-deploy" : "composer install"
+    },
+    "production": {
+      "user": "@@",
+      "host": "qual-msn-web07.qualtim.local",
+      "ref": "origin/production",
+      "repo": "git@git.pushing7.com:raisingthefloor/morphic-drupal.git",
+      "path": "/var/www/morphic.world/private",
+      "ssh_options": [
+        "StrictHostKeyChecking=no",
+        "PasswordAuthentication=no"
+      ],
+      "post-deploy" : "composer update"
+    }
+  }
+}
