@@ -29,6 +29,41 @@ body.navbar-is-fixed-top {
 	}
 }
 
+body.path-user,
+body.path-search {
+	margin-top: 140px; 
+
+	.region.region-content {
+		@media (min-width: 768px) {
+			width: 750px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media (min-width: 992px) {
+			width: 970px;
+		}
+
+		@media (min-width: 1200px) {
+			width: 1170px;
+		}
+	}
+}
+
+h2.block-title {
+	  position: absolute !important;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
+}
+
+body.path-user.user-logged-in,
+body.path-search.user-logged-in {
+	margin-top: 230px;
+}
+
 .container-fluid {
 	margin: 0;
 	padding: 0;
