@@ -14,6 +14,23 @@
 }
 
 .homepage-links {
+	margin-right: 24px;
+	margin-left: 24px;
+
+	@media (min-width: 768px) {
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+
+	@media (min-width: 1170px) {
+		width: 1170px;
+	}
+
 	ul.homepage-links-list {
 		list-style-type: none;
 		margin: 0;
@@ -39,6 +56,7 @@
 		box-sizing: border-box;
 		margin-bottom: 2rem;
 		cursor: pointer;
+		width: 100%;
 
 		@media (min-width: 480px) {
 			width: 40%;
@@ -46,6 +64,8 @@
 
 		@media (min-width: 992px) {
 			width: 22%;
+			margin-right: 12px;
+			margin-left: 12px;
 		}
 
 		&:hover {
@@ -86,9 +106,14 @@
 		margin: 0 auto;
 	}
 
+	.homepage-link-content p {
+		height: 5rem;
+	}
+
 	.homepage-page-link a {
 		border-top: 1px solid #eee;
-		font-weight: 500;
+		font-weight: bold;
+		letter-spacing: 1px;
 		font-size: (14px/16px)*1rem;
 		display: block;
 		color: #008145;
@@ -100,6 +125,12 @@
 			content: ">";
 			padding-left: 0.3rem;
 		}   
+
+		&:focus {
+			color: #fff;
+			background-color: #008145;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -111,16 +142,10 @@
 	}
 
 	@media (min-width: 992px) {
-		padding: 9rem 0;
+		padding: 96px 0 192px;
 	}
 
-	@media (min-width: 1200px) {
-		margin-left: auto;
-		margin-right: auto;
-		width: 1170px;
-	}
-
-	margin-bottom: 4rem;
+	margin-bottom: (48px/16px)*1rem;
 	position: relative;
 }
 
@@ -128,28 +153,82 @@
 	background-color: rgba(0, 41, 87, .7);
 
 	width: 100%;
-	padding: 2rem;
+	padding: (48px/16px)*1rem;
 
 	@media (min-width: 768px) {
-		width: 50%;
-		padding-left: 6rem;
+		width: 55%;
+		padding-left: 2rem;
 	}
 
 	@media (min-width: 992px) {
-		width: 50%;
-		padding-left: 10rem;
-		padding-right: 6rem;
+		width: 45%;
+		padding-left: (96px/16px)*1rem;
+		padding-right: 2rem;
 	}
 
 	color: #fff;
 	font-size: (20px/16px)*1rem;
 
 	h1 {
+		font-size: (48px/16px)*1rem;
 		text-align: left;
 		color: #fff;
 		font-weight: 600;
 		margin-bottom: 1rem;
 		margin-top: 0;
 		line-height: 1.4em;
+	}
+}
+
+#block-homepageblurb {
+	padding: 0 2rem;
+	margin-bottom: 4rem;
+
+	@media (min-width: 768px) {
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 1170px;
+	}
+
+	.homepage-blurb-title {
+		margin-bottom: 2rem;
+
+		@media (min-width: 992px) {
+			width: 33%;
+			float: left;
+			padding: 0 2rem;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 0 4rem;
+		}
+	}
+
+	.homepage-blurb-content {
+
+		p.lead-in {
+			font-size: (21px/16px)*1rem;
+			line-height: (30px/16px)*1rem;
+			color: #002957;
+		}
+
+		@media (min-width: 992px) {
+			padding-right: 2rem;
+			width: 66%;
+			float: left;
+			overflow: hidden;
+		}
+
+		@media (min-width: 1200px) {
+			padding-right: 4rem;
+		}
 	}
 }

@@ -21,6 +21,7 @@ regions:
 
 libraries:
   - morphic/global-scripts
+  - morphic/fonts
 
 libraries-extend:
   bootstrap/framework:
