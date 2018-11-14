@@ -153,6 +153,26 @@ button.collapsible-title[aria-expanded="true"] {
 	padding: 1rem 1rem 3rem 1rem;
 }
 
+// Images in paragraphs
+img.align-center {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}	
+
+img.align-left {
+	margin-top: 1rem;
+	margin-right: 1rem;
+	margin-left: 0px;
+	margin-bottom: 1rem;
+}
+
+img.align-right {
+	margin-top: 1rem;
+	margin-right: 0;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+
 /*******************************
  * VIEWS
  ******************************/
@@ -265,7 +285,7 @@ nav.breadcrumb li {
   display: inline;
   text-transform: uppercase;
   font-size: (14px/16px)*1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav.breadcrumb a {
