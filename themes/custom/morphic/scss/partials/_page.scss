@@ -282,3 +282,9 @@ nav.breadcrumb [aria-current="page"] {
   color: #000;
   text-decoration: none;
 }
+
+.anchor {
+	display: block;
+	padding-top: 140px;
+	margin-top: -140px !important;
+}
