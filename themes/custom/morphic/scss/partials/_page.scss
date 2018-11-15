@@ -98,6 +98,12 @@
 
 .field--name-field-sub-sections {
 
+	h3 {
+		font-size: 1rem;
+		margin-top: (24px/16px)*1rem;
+		margin-bottom: (8px/16px)*1rem;
+	}
+
 	.subsection-title,
 	.subsection-title > a {
 		margin-top: 0;
