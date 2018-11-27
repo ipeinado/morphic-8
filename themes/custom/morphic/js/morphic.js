@@ -32,18 +32,17 @@
         });
       });
 
-      $('.search-block-form', context).once('.search-block-form').each(function() {
-        var input = $(this).find('.form-search'),
-          that = this;
+      // $('.search-block-form', context).once('.search-block-form').each(function() {
+      //   var input = $(this).find('.form-search'),
+      //     that = this;
 
-        $(input).focus(function() {
-          $(that).addClass('expanded');
-        });
-
-        $(input).blur(function() {
-          $(that).removeClass('expanded');
-        });
-      });
+      //   $(input).hover(function() {
+      //       console.log('Hovering in');
+      //     }, 
+      //     function() {
+      //       console.log('Hovering out');
+      //     });
+      // });
 
       $('a[href^="mailto:"]', context).once('a[href^="mailto:"]').each(function() {
         this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');

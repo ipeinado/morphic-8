@@ -102,8 +102,8 @@
       }
     }
 
-    &.active > a,
-    &.active > a:hover {
+    &.active-trail > a,
+    &.active-trail > a:hover {
       color: #008145;
       background-color: #fff;
     }
@@ -151,16 +151,22 @@
       box-shadow: none;
       border-radius: 0;
       width: 100%;
+
+      &:focus {
+        outline: 2px auto #008145;
+        outline-offset: -2px;
+      }
     }
 
     .input-group .input-group-btn {
       position: absolute;
-      right: 34px;
+      right: 36px;
       z-index: 10;
 
       .btn {
-        padding-top: 7px;
-        padding-bottom: 8px;
+        margin-top: 1px;
+        padding-top: 6px;
+        padding-bottom: 7px;
         background-color: #f6f6f9;
         color: #002957;
         border: none;
