@@ -110,7 +110,8 @@
 		font-size: 1rem;
 		text-transform: uppercase;
 		color: #008145;
-		font-weight: bold;
+		font-weight: 600;
+		letter-spacing: 1px;
 	}
 
 	.subsection-title > a:hover,
@@ -185,34 +186,22 @@ img.align-right {
  .view-pilots,
  .view-morphic-basics {
  	@media (min-width: 992px) {
- 		padding-left: 25%;
- 	}
-
- 	h2 {
- 		margin-top: 0;
-    	font-size: 1rem;
-    	text-transform: uppercase;
-    	color: #008145;
-    	letter-spacing: 1px;
-    	font-weight: bold;
-
- 		a {
- 			color: #008145;
- 		}
+ 		padding-left: calc(33% - 48px);
  	}
  }
 
 .view-pilots {
 
-	.item-list ul {
+	ul.pilots-list {
 		list-style-type: none;
 		margin: 3rem 0 0 0;
 		padding: 0;
+		display: flex;
 
 		li {
 			display: inline-block;
 			float: left;
-			width: 340px;
+			width: 384px;
 			border: 1px solid #ccc;
 			text-align: center;
 			margin: 0 1rem 1rem;

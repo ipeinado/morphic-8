@@ -27,6 +27,29 @@ img {
 	max-width: 100%;
 }
 
+p,
+ul > li,
+ol > li {
+	margin-bottom: 1rem;
+}
+
+a {
+	color: #008145;
+}
+
+h2 {
+ 	margin-top: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+
 body.navbar-is-fixed-top {
 	@media (min-width: 992px) {
 		margin-top: 126px;
@@ -38,6 +61,8 @@ body.path-search {
 	margin-top: 140px; 
 
 	.region.region-content {
+		padding: 0 1em; 
+
 		@media (min-width: 768px) {
 			width: 750px;
 			margin-left: auto;
@@ -72,6 +97,8 @@ body.path-search.user-logged-in {
 	margin: 0;
 	padding: 0;
 }
+
+
 
 h1, h2, h3, h4 {
 	font-weight: bold;
@@ -210,6 +237,8 @@ footer.container {
 }
 
 .search-form {
+	margin-bottom: 2rem;
+
 	input[type='search'] {
 		font-size: 1rem;
 		background-color: #f6f6f9;
