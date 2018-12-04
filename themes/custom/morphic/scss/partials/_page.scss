@@ -221,11 +221,15 @@ img.align-right {
 			position: relative;
 
 			img {
+				margin: 0 auto;
+				max-height: 80%;
+				max-width: 60%;
+				// max-height: 80%;
 				position: absolute;
-				width: 60%;
+				// width: 60%;
 				top: 50%;
-				left: 20%;
-				transform: translate(0, -50%);
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 		}
 
